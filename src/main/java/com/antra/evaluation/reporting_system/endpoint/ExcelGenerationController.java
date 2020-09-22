@@ -37,33 +37,42 @@ public class ExcelGenerationController {
     private static int incrementalFileID = 1;
 
     ExcelService excelService;
-
-    @Autowired
-    public ExcelGenerationController(ExcelService excelService) {
-        this.excelService = excelService;
-    }
-
-    @Autowired
     ExcelRepository excelRepository;
+
+
+    @Autowired
+    public ExcelGenerationController(ExcelService excelService, ExcelRepository excelRepository) {
+        this.excelService = excelService;
+        this.excelRepository = excelRepository;
+
+    }
 
     @PostMapping("/excel")
     @ApiOperation("Generate Excel")
-    public ResponseEntity<ExcelResponse> createExcel(@RequestBody @Validated ExcelRequest request) throws IOException {
+    public ResponseEntity<ExcelResponse> createExcel(@RequestBody ExcelRequest request) throws IOException {
         ExcelResponse response = new ExcelResponse();
+        if(!validationParams(request, null)){
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
+
         CreateExcelDataServiceImpl createExcelDataServiceImp = new CreateExcelDataServiceImpl();
+
         ExcelData excelData = createExcelDataServiceImp.createExcelData(request);
+
         ExcelGenerationServiceImpl excelGenerationService = new ExcelGenerationServiceImpl();
         excelGenerationService.generateExcelReport(excelData);
 
         response.setFileId(String.valueOf(incrementalFileID++));
-        log.info("createExcel");
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     @PostMapping("/excel/auto")
     @ApiOperation("Generate Multi-Sheet Excel Using Split field")
-    public ResponseEntity<ExcelResponse> createMultiSheetExcel(@RequestBody @Validated MultiSheetExcelRequest request) throws IOException {
+    public ResponseEntity<ExcelResponse> createMultiSheetExcel(@RequestBody MultiSheetExcelRequest request) throws IOException {
         ExcelResponse response = new ExcelResponse();
+        if(!validationParams(null, request)){
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
         CreateMultiExcelDataServiceImpl createMultiExcelDataServiceImp = new CreateMultiExcelDataServiceImpl();
         ExcelData excelData = createMultiExcelDataServiceImp.createMultiExcelData(request);
         ExcelGenerationServiceImpl excelGenerationService = new ExcelGenerationServiceImpl();
@@ -83,7 +92,7 @@ public class ExcelGenerationController {
             excelResponse.setFileId(excelFile.getFileId());
             response.add(excelResponse);
         }
-        System.out.println(response);
+
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
@@ -105,7 +114,33 @@ public class ExcelGenerationController {
         }
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
+
+    public boolean validationParams(@RequestBody ExcelRequest request, @RequestBody MultiSheetExcelRequest requestOfMulti){
+        List<String> headers = request != null ? request.getHeaders() : requestOfMulti.getHeaders();
+        List<List<Object>> data = request != null ? request.getData() : requestOfMulti.getData();
+        if(requestOfMulti!=null){
+           String splitBy = requestOfMulti.getSplitBy();
+           if(splitBy.isEmpty() || splitBy.length()==0){
+               log.info("Invalid splitBy");
+               return false;
+           }
+        }
+        if(headers==null || headers.size()==0){
+            log.info("Empty headers");
+            return false;
+        }
+        if(data==null || data.size()==0){
+            log.info("Empty data");
+            return false;
+        }
+        int col = headers.size();
+        for(List<Object> row : data){
+            if(col != row.size()) {
+                log.info("Total Number of header isn't equals to the size of some rows in data");
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
-// Log
-// Exception handling
-// Validation

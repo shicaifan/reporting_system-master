@@ -1,71 +1,712 @@
-2020-09-19 14:19:51.190  INFO 69942 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-19 14:20:09.284  INFO 73127 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 73127 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-19 14:20:09.302  INFO 73127 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-19 14:20:09.590  INFO 73127 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-19 14:20:09.590  INFO 73127 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-19 14:20:13.194  INFO 73127 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-19 14:20:13.218  INFO 73127 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-19 14:20:13.220  INFO 73127 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-19 14:20:13.382  INFO 73127 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-19 14:20:13.383  INFO 73127 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3792 ms
-2020-09-19 14:20:14.133  INFO 73127 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-19 14:20:14.269  INFO 73127 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-19 14:20:14.354  INFO 73127 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-19 14:20:14.600  INFO 73127 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-19 14:20:14.606  INFO 73127 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-19 14:20:14.662  INFO 73127 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-19 14:20:14.751  INFO 73127 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-19 14:20:15.040  INFO 73127 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 7.074 seconds (JVM running for 10.447)
-2020-09-19 14:21:01.333  INFO 73127 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-09-19 14:21:01.349  INFO 73127 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-09-19 14:21:01.463  INFO 73127 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 112 ms
-2020-09-19 14:21:12.883  INFO 73127 --- [http-nio-8080-exec-2] c.a.e.r.e.ExcelGenerationController      : createExcel
-2020-09-19 14:21:19.782  INFO 73127 --- [http-nio-8080-exec-3] c.a.e.r.e.ExcelGenerationController      : createExcel
-2020-09-19 14:22:41.070  WARN 73127 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `java.lang.String` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.String` out of START_ARRAY token
- at [Source: (PushbackInputStream); line: 3, column: 13] (through reference chain: com.antra.evaluation.reporting_system.pojo.api.MultiSheetExcelRequest["splitBy"])]
-2020-09-19 14:37:08.712  INFO 73127 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-19 14:37:19.082  INFO 73603 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 73603 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-19 14:37:19.087  INFO 73603 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-19 14:37:19.193  INFO 73603 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-19 14:37:19.193  INFO 73603 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-19 14:37:21.584  INFO 73603 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-19 14:37:21.605  INFO 73603 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-19 14:37:21.605  INFO 73603 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-19 14:37:21.740  INFO 73603 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-19 14:37:21.741  INFO 73603 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2547 ms
-2020-09-19 14:37:22.376  INFO 73603 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-19 14:37:22.499  INFO 73603 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-19 14:37:22.611  INFO 73603 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-19 14:37:22.831  INFO 73603 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-19 14:37:22.833  INFO 73603 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-19 14:37:22.893  INFO 73603 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-19 14:37:22.955  INFO 73603 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-19 14:37:23.225  INFO 73603 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 4.966 seconds (JVM running for 6.9)
-2020-09-19 14:37:41.273  INFO 73603 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-09-19 14:37:41.275  INFO 73603 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-09-19 14:37:41.294  INFO 73603 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
-2020-09-19 14:37:47.331  INFO 73603 --- [http-nio-8080-exec-1] c.a.e.r.e.ExcelGenerationController      : createExcel
-2020-09-19 14:37:54.152  INFO 73603 --- [http-nio-8080-exec-3] c.a.e.r.e.ExcelGenerationController      : createExcel
-2020-09-19 14:38:17.402  WARN 73603 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `java.lang.String` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.String` out of START_ARRAY token
- at [Source: (PushbackInputStream); line: 3, column: 13] (through reference chain: com.antra.evaluation.reporting_system.pojo.api.MultiSheetExcelRequest["splitBy"])]
-2020-09-19 15:15:30.319  INFO 73603 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-19 15:15:39.792  INFO 74351 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 74351 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-19 15:15:39.801  INFO 74351 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-19 15:15:39.973  INFO 74351 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-19 15:15:39.974  INFO 74351 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-19 15:15:44.251  INFO 74351 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-19 15:15:44.269  INFO 74351 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-19 15:15:44.270  INFO 74351 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-19 15:15:44.396  INFO 74351 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-19 15:15:44.396  INFO 74351 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4421 ms
-2020-09-19 15:15:44.999  INFO 74351 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-19 15:15:45.142  INFO 74351 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-19 15:15:45.203  INFO 74351 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-19 15:15:45.403  INFO 74351 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-19 15:15:45.405  INFO 74351 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-19 15:15:45.447  INFO 74351 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-19 15:15:45.494  INFO 74351 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-19 15:15:45.713  INFO 74351 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 7.078 seconds (JVM running for 9.126)
-2020-09-19 15:16:39.168  INFO 74351 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-09-19 15:16:39.169  INFO 74351 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-09-19 15:16:39.194  INFO 74351 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2020-09-21 16:17:48.812  INFO 2712 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:17:49.469  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 2712 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 16:17:49.470  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 16:17:50.686  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 16:17:50.687  INFO 2712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 16:17:50.688  INFO 2712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 16:17:50.710  INFO 2712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 16:17:50.711  INFO 2712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1235 ms
+2020-09-21 16:17:51.148  INFO 2712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 16:17:51.243  INFO 2712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:17:51.289  INFO 2712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 16:17:51.414  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 16:17:51.415  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 16:17:51.416  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 16:17:51.428  INFO 2712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 16:17:51.502  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 2.328 seconds (JVM running for 12664.842)
+2020-09-21 16:17:51.510  INFO 2712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 16:17:53.043  INFO 7728 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 7728 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 16:17:53.046  INFO 7728 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 16:17:56.013  INFO 7728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 16:17:56.038  INFO 7728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 16:17:56.039  INFO 7728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 16:17:56.231  INFO 7728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 16:17:56.232  INFO 7728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2551 ms
+2020-09-21 16:17:57.311  INFO 7728 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 16:17:57.538  INFO 7728 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:17:58.375  INFO 7728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55070 (http) with context path ''
+2020-09-21 16:17:58.376  INFO 7728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 16:17:58.426  INFO 7728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 16:17:58.473  INFO 7728 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 16:17:58.782  INFO 7728 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 6.899 seconds (JVM running for 10.609)
+2020-09-21 16:17:59.624  INFO 7728 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Headers is Empty!
+2020-09-21 16:18:01.728  INFO 7728 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:21:51.904  INFO 7845 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 7845 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 16:21:51.907  INFO 7845 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 16:21:56.026  INFO 7845 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 16:21:56.074  INFO 7845 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 16:21:56.075  INFO 7845 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 16:21:56.320  INFO 7845 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 16:21:56.321  INFO 7845 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3792 ms
+2020-09-21 16:21:57.816  INFO 7845 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 16:21:58.151  INFO 7845 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:21:59.707  INFO 7845 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55127 (http) with context path ''
+2020-09-21 16:21:59.710  INFO 7845 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 16:21:59.792  INFO 7845 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 16:21:59.911  INFO 7845 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 16:22:00.424  INFO 7845 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 9.542 seconds (JVM running for 13.594)
+2020-09-21 16:29:39.919  INFO 7845 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Headers is Empty!
+2020-09-21 16:29:42.150  INFO 7845 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:29:48.813  INFO 2712 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:29:49.386  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 2712 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 16:29:49.387  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 16:29:50.351  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 16:29:50.357  INFO 2712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 16:29:50.360  INFO 2712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 16:29:50.386  INFO 2712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 16:29:50.386  INFO 2712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 994 ms
+2020-09-21 16:29:50.646  INFO 2712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 16:29:50.715  INFO 2712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:29:50.726  INFO 2712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 16:29:50.897  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 16:29:50.899  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 16:29:50.901  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 16:29:50.911  INFO 2712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 16:29:50.978  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 1.836 seconds (JVM running for 13384.28)
+2020-09-21 16:29:50.985  INFO 2712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 16:29:52.577  INFO 8092 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 8092 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 16:29:52.582  INFO 8092 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 16:29:55.343  INFO 8092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 16:29:55.369  INFO 8092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 16:29:55.370  INFO 8092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 16:29:55.540  INFO 8092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 16:29:55.541  INFO 8092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2389 ms
+2020-09-21 16:29:56.828  INFO 8092 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 16:29:57.132  INFO 8092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:29:57.954  INFO 8092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55246 (http) with context path ''
+2020-09-21 16:29:57.955  INFO 8092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 16:29:58.001  INFO 8092 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 16:29:58.047  INFO 8092 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 16:29:58.296  INFO 8092 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 6.83 seconds (JVM running for 10.289)
+2020-09-21 16:29:59.124  INFO 8092 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Headers is Empty!
+2020-09-21 16:30:01.201  INFO 8092 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:37:44.253  INFO 8330 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 8330 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 16:37:44.258  INFO 8330 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 16:37:48.092  INFO 8330 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 16:37:48.125  INFO 8330 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 16:37:48.126  INFO 8330 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 16:37:48.351  INFO 8330 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 16:37:48.352  INFO 8330 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3385 ms
+2020-09-21 16:37:50.013  INFO 8330 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 16:37:50.406  INFO 8330 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 16:37:51.565  INFO 8330 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55392 (http) with context path ''
+2020-09-21 16:37:51.568  INFO 8330 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 16:37:51.624  INFO 8330 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 16:37:51.722  INFO 8330 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 16:37:52.080  INFO 8330 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 9.429 seconds (JVM running for 13.954)
+2020-09-21 16:37:55.222  INFO 8330 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 17:11:44.100  INFO 8467 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 8467 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 17:11:44.104  INFO 8467 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 17:11:47.464  INFO 8467 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 17:11:47.491  INFO 8467 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 17:11:47.492  INFO 8467 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 17:11:47.691  INFO 8467 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 17:11:47.692  INFO 8467 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2789 ms
+2020-09-21 17:11:48.782  INFO 8467 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 17:11:49.035  INFO 8467 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 17:11:49.915  INFO 8467 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55558 (http) with context path ''
+2020-09-21 17:11:49.917  INFO 8467 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 17:11:49.967  INFO 8467 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 17:11:50.013  INFO 8467 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 17:11:50.297  INFO 8467 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.47 seconds (JVM running for 10.719)
+2020-09-21 17:11:53.237  INFO 8467 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 17:12:23.063  INFO 8484 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 8484 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 17:12:23.068  INFO 8484 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 17:12:27.085  INFO 8484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 17:12:27.116  INFO 8484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 17:12:27.118  INFO 8484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 17:12:27.319  INFO 8484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 17:12:27.319  INFO 8484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3543 ms
+2020-09-21 17:12:28.623  INFO 8484 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 17:12:28.913  INFO 8484 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 17:12:30.052  INFO 8484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55572 (http) with context path ''
+2020-09-21 17:12:30.058  INFO 8484 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 17:12:30.163  INFO 8484 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 17:12:30.266  INFO 8484 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 17:12:30.665  INFO 8484 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 8.757 seconds (JVM running for 12.32)
+2020-09-21 17:12:34.040  INFO 8484 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 17:13:03.881  INFO 8510 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 8510 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 17:13:03.884  INFO 8510 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 17:13:06.847  INFO 8510 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 17:13:06.873  INFO 8510 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 17:13:06.874  INFO 8510 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 17:13:07.090  INFO 8510 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 17:13:07.090  INFO 8510 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2558 ms
+2020-09-21 17:13:08.280  INFO 8510 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 17:13:08.547  INFO 8510 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 17:13:09.446  INFO 8510 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55586 (http) with context path ''
+2020-09-21 17:13:09.447  INFO 8510 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 17:13:09.509  INFO 8510 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 17:13:09.584  INFO 8510 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 17:13:09.940  INFO 8510 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.498 seconds (JVM running for 10.699)
+2020-09-21 17:13:10.765  INFO 8510 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Headers is Empty!
+2020-09-21 17:13:12.857  INFO 8510 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 18:35:29.430  INFO 10549 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 10549 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 18:35:29.437  INFO 10549 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 18:35:32.530  INFO 10549 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 18:35:32.556  INFO 10549 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 18:35:32.556  INFO 10549 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 18:35:32.739  INFO 10549 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 18:35:32.742  INFO 10549 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2610 ms
+2020-09-21 18:35:34.068  INFO 10549 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 18:35:34.317  INFO 10549 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 18:35:35.190  INFO 10549 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56571 (http) with context path ''
+2020-09-21 18:35:35.191  INFO 10549 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 18:35:35.249  INFO 10549 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 18:35:35.300  INFO 10549 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 18:35:35.601  INFO 10549 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.636 seconds (JVM running for 11.683)
+2020-09-21 18:35:38.537  INFO 10549 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 18:37:45.583  INFO 10609 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 10609 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 18:37:45.589  INFO 10609 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 18:37:49.279  INFO 10609 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 18:37:49.305  INFO 10609 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 18:37:49.306  INFO 10609 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 18:37:49.538  INFO 10609 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 18:37:49.539  INFO 10609 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3252 ms
+2020-09-21 18:37:51.041  INFO 10609 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 18:37:51.395  INFO 10609 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 18:37:52.387  INFO 10609 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56599 (http) with context path ''
+2020-09-21 18:37:52.389  INFO 10609 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 18:37:52.444  INFO 10609 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 18:37:52.517  INFO 10609 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 18:37:52.849  INFO 10609 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 8.537 seconds (JVM running for 12.337)
+2020-09-21 18:37:55.876  INFO 10609 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 18:51:39.824  INFO 2712 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 18:51:40.335  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 2712 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 18:51:40.336  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 18:51:41.444  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 18:51:41.448  INFO 2712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 18:51:41.449  INFO 2712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 18:51:41.496  INFO 2712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 18:51:41.497  INFO 2712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1151 ms
+2020-09-21 18:51:41.779  INFO 2712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 18:51:41.861  INFO 2712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 18:51:41.878  INFO 2712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 18:51:42.041  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 18:51:42.042  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 18:51:42.044  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 18:51:42.056  INFO 2712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 18:51:42.186  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 2.128 seconds (JVM running for 19987.68)
+2020-09-21 18:51:42.189  INFO 2712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 18:51:43.803  INFO 11002 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 11002 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 18:51:43.808  INFO 11002 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 18:51:47.015  INFO 11002 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 18:51:47.043  INFO 11002 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 18:51:47.044  INFO 11002 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 18:51:47.238  INFO 11002 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 18:51:47.239  INFO 11002 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2827 ms
+2020-09-21 18:51:48.544  INFO 11002 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 18:51:48.821  INFO 11002 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 18:51:49.739  INFO 11002 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56752 (http) with context path ''
+2020-09-21 18:51:49.741  INFO 11002 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 18:51:49.796  INFO 11002 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 18:51:49.851  INFO 11002 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 18:51:50.141  INFO 11002 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.533 seconds (JVM running for 11.084)
+2020-09-21 18:51:51.011  INFO 11002 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Data is empty!
+2020-09-21 18:51:53.126  INFO 11002 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:02:33.395  INFO 11304 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 11304 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:02:33.398  INFO 11304 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 19:02:37.342  INFO 11304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 19:02:37.388  INFO 11304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:02:37.388  INFO 11304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:02:37.682  INFO 11304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:02:37.683  INFO 11304 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3707 ms
+2020-09-21 19:02:39.262  INFO 11304 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:02:39.614  INFO 11304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:02:41.314  INFO 11304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56894 (http) with context path ''
+2020-09-21 19:02:41.318  INFO 11304 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:02:41.426  INFO 11304 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:02:41.560  INFO 11304 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:02:42.058  INFO 11304 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 9.903 seconds (JVM running for 13.803)
+2020-09-21 19:03:19.089  INFO 11304 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Data is empty!
+2020-09-21 19:03:42.379  INFO 11304 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:06:16.226  INFO 11411 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 11411 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:06:16.231  INFO 11411 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 19:06:20.414  INFO 11411 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 19:06:20.457  INFO 11411 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:06:20.458  INFO 11411 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:06:20.710  INFO 11411 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:06:20.711  INFO 11411 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3937 ms
+2020-09-21 19:06:22.225  INFO 11411 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:06:22.598  INFO 11411 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:06:24.075  INFO 11411 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56950 (http) with context path ''
+2020-09-21 19:06:24.078  INFO 11411 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:06:24.161  INFO 11411 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:06:24.278  INFO 11411 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:06:24.791  INFO 11411 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 9.624 seconds (JVM running for 13.59)
+2020-09-21 19:07:05.279  INFO 11411 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:07:28.524  INFO 11446 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 11446 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:07:28.527  INFO 11446 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 19:07:32.754  INFO 11446 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 19:07:32.796  INFO 11446 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:07:32.797  INFO 11446 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:07:33.149  INFO 11446 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:07:33.151  INFO 11446 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4101 ms
+2020-09-21 19:07:34.730  INFO 11446 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:07:35.058  INFO 11446 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:07:36.551  INFO 11446 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56968 (http) with context path ''
+2020-09-21 19:07:36.554  INFO 11446 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:07:36.646  INFO 11446 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:07:36.764  INFO 11446 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:07:37.280  INFO 11446 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 9.973 seconds (JVM running for 13.736)
+2020-09-21 19:11:09.663  INFO 11537 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 11537 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:11:09.668  INFO 11537 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 19:11:13.717  INFO 11537 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 19:11:13.766  INFO 11537 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:11:13.766  INFO 11537 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:11:14.039  INFO 11537 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:11:14.039  INFO 11537 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3751 ms
+2020-09-21 19:11:15.664  INFO 11537 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:11:16.009  INFO 11537 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:11:17.540  INFO 11537 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57010 (http) with context path ''
+2020-09-21 19:11:17.544  INFO 11537 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:11:17.649  INFO 11537 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:11:17.771  INFO 11537 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:11:18.271  INFO 11537 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 9.798 seconds (JVM running for 14.192)
+2020-09-21 19:12:18.294  INFO 11572 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 11572 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:12:18.298  INFO 11572 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 19:12:23.846  INFO 11572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 19:12:23.903  INFO 11572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:12:23.904  INFO 11572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:12:24.388  INFO 11572 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:12:24.394  INFO 11572 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5290 ms
+2020-09-21 19:12:26.693  INFO 11572 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:12:27.051  INFO 11572 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:12:28.630  INFO 11572 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57030 (http) with context path ''
+2020-09-21 19:12:28.634  INFO 11572 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:12:28.732  INFO 11572 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:12:28.869  INFO 11572 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:12:29.374  INFO 11572 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 12.24 seconds (JVM running for 16.697)
+2020-09-21 19:12:58.078  INFO 11446 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:12:58.227  INFO 11537 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:12:58.304  INFO 11572 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:13:05.900  INFO 11599 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 11599 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:13:05.903  INFO 11599 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 19:13:10.476  INFO 11599 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 19:13:10.538  INFO 11599 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:13:10.539  INFO 11599 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:13:11.130  INFO 11599 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:13:11.132  INFO 11599 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4571 ms
+2020-09-21 19:13:13.267  INFO 11599 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:13:14.035  INFO 11599 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:13:15.880  INFO 11599 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57042 (http) with context path ''
+2020-09-21 19:13:15.884  INFO 11599 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:13:15.992  INFO 11599 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:13:16.130  INFO 11599 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:13:16.690  INFO 11599 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 11.911 seconds (JVM running for 17.446)
+2020-09-21 19:23:27.847  INFO 11599 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:23:38.850  INFO 11873 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 11873 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:23:38.855  INFO 11873 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 19:23:43.056  INFO 11873 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 19:23:43.098  INFO 11873 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:23:43.098  INFO 11873 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:23:43.362  INFO 11873 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:23:43.363  INFO 11873 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3958 ms
+2020-09-21 19:23:45.000  INFO 11873 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:23:45.359  INFO 11873 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:23:46.961  INFO 11873 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57186 (http) with context path ''
+2020-09-21 19:23:46.967  INFO 11873 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:23:47.060  INFO 11873 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:23:47.191  INFO 11873 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:23:47.733  INFO 11873 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 10.05 seconds (JVM running for 13.781)
+2020-09-21 19:27:33.900  INFO 11873 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Data is empty!
+2020-09-21 19:27:35.955  INFO 11873 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:27:45.653  INFO 11997 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 11997 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:27:45.657  INFO 11997 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 19:27:49.826  INFO 11997 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 19:27:49.868  INFO 11997 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:27:49.869  INFO 11997 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:27:50.133  INFO 11997 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:27:50.134  INFO 11997 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3892 ms
+2020-09-21 19:27:51.713  INFO 11997 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:27:52.075  INFO 11997 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:27:53.571  INFO 11997 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57262 (http) with context path ''
+2020-09-21 19:27:53.574  INFO 11997 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:27:53.682  INFO 11997 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:27:53.806  INFO 11997 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:27:54.258  INFO 11997 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 9.664 seconds (JVM running for 13.294)
+2020-09-21 19:28:58.046  INFO 11997 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Data is empty!
+2020-09-21 19:29:00.141  INFO 11997 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:29:06.717  INFO 2712 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:29:07.025  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 2712 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:29:07.027  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 19:29:08.174  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 19:29:08.176  INFO 2712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:29:08.178  INFO 2712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:29:08.203  INFO 2712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:29:08.204  INFO 2712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1172 ms
+2020-09-21 19:29:08.419  INFO 2712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:29:08.484  INFO 2712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:29:08.509  INFO 2712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 19:29:08.660  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 19:29:08.663  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:29:08.665  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:29:08.678  INFO 2712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:29:08.763  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 1.791 seconds (JVM running for 22234.146)
+2020-09-21 19:29:08.773  INFO 2712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 19:29:10.406  INFO 12037 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 12037 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:29:10.412  INFO 12037 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 19:29:13.586  INFO 12037 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 19:29:13.613  INFO 12037 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:29:13.613  INFO 12037 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:29:13.823  INFO 12037 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:29:13.823  INFO 12037 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2775 ms
+2020-09-21 19:29:15.064  INFO 12037 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:29:15.352  INFO 12037 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:29:16.216  INFO 12037 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57290 (http) with context path ''
+2020-09-21 19:29:16.217  INFO 12037 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:29:16.266  INFO 12037 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:29:16.312  INFO 12037 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:29:16.569  INFO 12037 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.376 seconds (JVM running for 11.167)
+2020-09-21 19:29:19.474  INFO 12037 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:30:08.696  INFO 12069 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 12069 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 19:30:08.700  INFO 12069 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 19:30:11.973  INFO 12069 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 19:30:11.997  INFO 12069 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 19:30:11.998  INFO 12069 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 19:30:12.175  INFO 12069 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 19:30:12.176  INFO 12069 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2810 ms
+2020-09-21 19:30:13.547  INFO 12069 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 19:30:13.822  INFO 12069 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 19:30:14.742  INFO 12069 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57306 (http) with context path ''
+2020-09-21 19:30:14.744  INFO 12069 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 19:30:14.793  INFO 12069 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 19:30:14.844  INFO 12069 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 19:30:15.121  INFO 12069 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.615 seconds (JVM running for 11.185)
+2020-09-21 19:30:18.008  INFO 12069 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:41:49.558  INFO 2712 --- [Thread-33] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:41:50.207  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 2712 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 21:41:50.208  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 21:41:51.921  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 21:41:51.924  INFO 2712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 21:41:51.924  INFO 2712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 21:41:52.057  INFO 2712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 21:41:52.057  INFO 2712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1844 ms
+2020-09-21 21:41:53.349  INFO 2712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 21:41:53.667  INFO 2712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:41:53.731  INFO 2712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 21:41:54.718  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 21:41:54.736  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 21:41:54.743  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 21:41:54.754  INFO 2712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 21:41:55.098  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 5.138 seconds (JVM running for 30200.142)
+2020-09-21 21:41:55.101  INFO 2712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 21:41:57.766  INFO 15699 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 15699 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 21:41:57.769  INFO 15699 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 21:42:04.194  INFO 15699 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 21:42:04.220  INFO 15699 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 21:42:04.221  INFO 15699 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 21:42:04.466  INFO 15699 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 21:42:04.467  INFO 15699 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5295 ms
+2020-09-21 21:42:06.935  INFO 15699 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 21:42:07.354  INFO 15699 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:42:08.860  INFO 15699 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 64893 (http) with context path ''
+2020-09-21 21:42:08.864  INFO 15699 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 21:42:08.931  INFO 15699 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 21:42:09.107  INFO 15699 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 21:42:09.631  INFO 15699 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 13.178 seconds (JVM running for 20.37)
+2020-09-21 21:42:11.494  INFO 15699 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Data is empty!
+2020-09-21 21:42:13.615  INFO 15699 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:43:28.163  INFO 15745 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 15745 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 21:43:28.168  INFO 15745 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 21:43:34.214  INFO 15745 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 21:43:34.282  INFO 15745 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 21:43:34.283  INFO 15745 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 21:43:34.742  INFO 15745 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 21:43:34.742  INFO 15745 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5707 ms
+2020-09-21 21:43:37.617  INFO 15745 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 21:43:38.381  INFO 15745 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:43:41.311  INFO 15745 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 65002 (http) with context path ''
+2020-09-21 21:43:41.318  INFO 15745 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 21:43:41.508  INFO 15745 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 21:43:41.804  INFO 15745 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 21:43:42.922  INFO 15745 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 16.846 seconds (JVM running for 24.451)
+2020-09-21 21:47:41.792  INFO 15745 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Data is empty!
+2020-09-21 21:47:44.050  INFO 15745 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:48:10.790  INFO 15897 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 15897 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 21:48:10.796  INFO 15897 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 21:48:13.786  INFO 15897 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 21:48:13.816  INFO 15897 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 21:48:13.817  INFO 15897 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 21:48:14.030  INFO 15897 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 21:48:14.031  INFO 15897 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2668 ms
+2020-09-21 21:48:15.127  INFO 15897 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 21:48:15.366  INFO 15897 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:48:16.212  INFO 15897 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 65455 (http) with context path ''
+2020-09-21 21:48:16.217  INFO 15897 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 21:48:16.269  INFO 15897 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 21:48:16.342  INFO 15897 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 21:48:16.586  INFO 15897 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.094 seconds (JVM running for 10.456)
+2020-09-21 21:48:17.459  INFO 15897 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Data is empty!
+2020-09-21 21:48:19.556  INFO 15897 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:49:04.696  INFO 15929 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 15929 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 21:49:04.703  INFO 15929 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 21:49:09.235  INFO 15929 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 21:49:09.277  INFO 15929 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 21:49:09.278  INFO 15929 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 21:49:09.630  INFO 15929 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 21:49:09.631  INFO 15929 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4229 ms
+2020-09-21 21:49:11.744  INFO 15929 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 21:49:12.096  INFO 15929 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:49:13.661  INFO 15929 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49152 (http) with context path ''
+2020-09-21 21:49:13.664  INFO 15929 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 21:49:13.763  INFO 15929 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 21:49:13.889  INFO 15929 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 21:49:14.423  INFO 15929 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 10.975 seconds (JVM running for 17.899)
+2020-09-21 21:56:49.022  INFO 15929 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Data is empty!
+2020-09-21 21:56:51.221  INFO 15929 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:57:03.309  INFO 16173 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 16173 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 21:57:03.313  INFO 16173 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 21:57:06.502  INFO 16173 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 21:57:06.529  INFO 16173 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 21:57:06.530  INFO 16173 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 21:57:06.728  INFO 16173 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 21:57:06.728  INFO 16173 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2702 ms
+2020-09-21 21:57:07.952  INFO 16173 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 21:57:08.237  INFO 16173 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:57:09.201  INFO 16173 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49678 (http) with context path ''
+2020-09-21 21:57:09.204  INFO 16173 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 21:57:09.257  INFO 16173 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 21:57:09.301  INFO 16173 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 21:57:09.560  INFO 16173 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.658 seconds (JVM running for 11.929)
+2020-09-21 21:57:12.494  INFO 16173 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:57:31.573  INFO 16192 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 16192 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 21:57:31.578  INFO 16192 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 21:57:35.839  INFO 16192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 21:57:35.905  INFO 16192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 21:57:35.906  INFO 16192 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 21:57:36.204  INFO 16192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 21:57:36.205  INFO 16192 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4036 ms
+2020-09-21 21:57:38.114  INFO 16192 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 21:57:38.503  INFO 16192 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 21:57:40.361  INFO 16192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49705 (http) with context path ''
+2020-09-21 21:57:40.366  INFO 16192 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 21:57:40.470  INFO 16192 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 21:57:40.605  INFO 16192 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 21:57:41.224  INFO 16192 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 10.776 seconds (JVM running for 15.341)
+2020-09-21 22:06:50.944  INFO 16192 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:07:01.620  INFO 2712 --- [Thread-38] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:07:02.027  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 2712 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 22:07:02.027  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 22:07:03.414  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 22:07:03.416  INFO 2712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 22:07:03.416  INFO 2712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 22:07:03.462  INFO 2712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 22:07:03.462  INFO 2712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1430 ms
+2020-09-21 22:07:03.956  INFO 2712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 22:07:04.103  INFO 2712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:07:04.130  INFO 2712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 22:07:04.277  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 22:07:04.278  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 22:07:04.280  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 22:07:04.305  INFO 2712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 22:07:04.432  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 2.501 seconds (JVM running for 31709.416)
+2020-09-21 22:07:04.445  INFO 2712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 22:07:06.057  INFO 16501 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 16501 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 22:07:06.060  INFO 16501 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 22:07:09.159  INFO 16501 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 22:07:09.189  INFO 16501 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 22:07:09.189  INFO 16501 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 22:07:09.389  INFO 16501 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 22:07:09.390  INFO 16501 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2703 ms
+2020-09-21 22:07:10.476  INFO 16501 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 22:07:10.745  INFO 16501 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:07:11.543  INFO 16501 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 50673 (http) with context path ''
+2020-09-21 22:07:11.544  INFO 16501 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 22:07:11.626  INFO 16501 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 22:07:11.671  INFO 16501 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 22:07:11.941  INFO 16501 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.153 seconds (JVM running for 11.383)
+2020-09-21 22:07:12.777  INFO 16501 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Excel Data Header: [com.antra.evaluation.reporting_system.pojo.report.ExcelDataHeader@64dcf763, com.antra.evaluation.reporting_system.pojo.report.ExcelDataHeader@696105c4, com.antra.evaluation.reporting_system.pojo.report.ExcelDataHeader@21ab919c]
+2020-09-21 22:07:12.780  INFO 16501 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Excel Datas: com.antra.evaluation.reporting_system.pojo.report.ExcelData@342394b3
+2020-09-21 22:07:12.781  INFO 16501 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save file into Repository Successfully: com.antra.evaluation.reporting_system.pojo.report.ExcelFile@5dd6f517
+2020-09-21 22:07:14.866  INFO 16501 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:08:23.492  INFO 2712 --- [Thread-43] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:08:23.876  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 2712 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 22:08:23.877  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 22:08:27.055  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 22:08:27.056  INFO 2712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 22:08:27.057  INFO 2712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 22:08:27.077  INFO 2712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 22:08:27.078  INFO 2712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3196 ms
+2020-09-21 22:08:27.574  INFO 2712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 22:08:27.711  INFO 2712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:08:27.726  INFO 2712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 22:08:27.996  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 22:08:27.997  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 22:08:27.999  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 22:08:28.007  INFO 2712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 22:08:28.133  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 4.515 seconds (JVM running for 31793.115)
+2020-09-21 22:08:28.136  INFO 2712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 22:08:31.977  INFO 16544 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 16544 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 22:08:31.981  INFO 16544 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 22:08:34.970  INFO 16544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 22:08:34.997  INFO 16544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 22:08:34.998  INFO 16544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 22:08:35.174  INFO 16544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 22:08:35.175  INFO 16544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2657 ms
+2020-09-21 22:08:36.295  INFO 16544 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 22:08:36.555  INFO 16544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:08:37.487  INFO 16544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 50736 (http) with context path ''
+2020-09-21 22:08:37.489  INFO 16544 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 22:08:37.542  INFO 16544 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 22:08:37.598  INFO 16544 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 22:08:37.865  INFO 16544 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.004 seconds (JVM running for 12.991)
+2020-09-21 22:08:38.713  INFO 16544 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Excel Data Header: [com.antra.evaluation.reporting_system.pojo.report.ExcelDataHeader@320fc4b0, com.antra.evaluation.reporting_system.pojo.report.ExcelDataHeader@10724a72, com.antra.evaluation.reporting_system.pojo.report.ExcelDataHeader@25435731]
+2020-09-21 22:08:38.717  INFO 16544 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Excel Datas: com.antra.evaluation.reporting_system.pojo.report.ExcelData@3c82bac3
+2020-09-21 22:08:38.718  INFO 16544 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save file into Repository Successfully: com.antra.evaluation.reporting_system.pojo.report.ExcelFile@3ddac0b6
+2020-09-21 22:08:40.791  INFO 16544 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:17:22.066  INFO 2712 --- [Thread-48] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:17:22.733  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 2712 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 22:17:22.734  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 22:17:25.726  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 22:17:25.733  INFO 2712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 22:17:25.734  INFO 2712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 22:17:25.792  INFO 2712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 22:17:25.792  INFO 2712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3050 ms
+2020-09-21 22:17:26.452  INFO 2712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 22:17:26.542  INFO 2712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:17:26.553  INFO 2712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 22:17:26.784  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 22:17:26.785  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 22:17:26.788  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 22:17:26.819  INFO 2712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 22:17:26.934  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 4.311 seconds (JVM running for 32331.885)
+2020-09-21 22:17:26.939  INFO 2712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 22:17:31.745  INFO 16811 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 16811 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 22:17:31.749  INFO 16811 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 22:17:36.740  INFO 16811 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 22:17:36.787  INFO 16811 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 22:17:36.788  INFO 16811 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 22:17:37.097  INFO 16811 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 22:17:37.097  INFO 16811 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4683 ms
+2020-09-21 22:17:39.594  INFO 16811 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 22:17:40.041  INFO 16811 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 22:17:41.909  INFO 16811 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51363 (http) with context path ''
+2020-09-21 22:17:41.913  INFO 16811 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 22:17:42.036  INFO 16811 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 22:17:42.209  INFO 16811 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 22:17:42.886  INFO 16811 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 12.54 seconds (JVM running for 20.174)
+2020-09-21 22:18:17.264  INFO 16811 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-21 22:19:00.986  INFO 16811 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-21 22:19:05.983  INFO 16811 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-21 22:19:11.382  INFO 16811 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-21 22:19:35.290  INFO 16811 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:23:02.467  INFO 2712 --- [Thread-53] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:23:03.190  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 2712 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 23:23:03.191  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 23:23:04.834  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 23:23:04.836  INFO 2712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 23:23:04.837  INFO 2712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 23:23:04.916  INFO 2712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 23:23:04.917  INFO 2712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1717 ms
+2020-09-21 23:23:05.446  INFO 2712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 23:23:05.667  INFO 2712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:23:05.684  INFO 2712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 23:23:05.877  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 23:23:05.878  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 23:23:05.879  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 23:23:05.892  INFO 2712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 23:23:06.040  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 3.069 seconds (JVM running for 36270.819)
+2020-09-21 23:23:06.046  INFO 2712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 23:24:01.227  INFO 18801 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 18801 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 23:24:01.234  INFO 18801 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 23:24:04.704  INFO 18801 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 23:24:04.730  INFO 18801 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 23:24:04.731  INFO 18801 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 23:24:04.956  INFO 18801 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 23:24:04.957  INFO 18801 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3108 ms
+2020-09-21 23:24:06.279  INFO 18801 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 23:24:06.565  INFO 18801 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:24:07.558  INFO 18801 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55804 (http) with context path ''
+2020-09-21 23:24:07.561  INFO 18801 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 23:24:07.618  INFO 18801 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 23:24:07.674  INFO 18801 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 23:24:07.948  INFO 18801 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 8.457 seconds (JVM running for 12.553)
+2020-09-21 23:24:08.793  INFO 18801 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
+2020-09-21 23:24:08.800  INFO 18801 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
+2020-09-21 23:24:08.801  INFO 18801 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
+2020-09-21 23:24:08.801  INFO 18801 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
+2020-09-21 23:24:08.836  INFO 18801 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-21 23:24:08.837  INFO 18801 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-21 23:24:08.838  INFO 18801 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-21 23:24:08.838  INFO 18801 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-21 23:24:13.816  INFO 18801 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:30:48.413  INFO 2712 --- [Thread-58] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:30:48.963  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 2712 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 23:30:48.964  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 23:30:50.258  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 23:30:50.264  INFO 2712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 23:30:50.265  INFO 2712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 23:30:50.324  INFO 2712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 23:30:50.325  INFO 2712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1357 ms
+2020-09-21 23:30:50.949  INFO 2712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 23:30:51.145  INFO 2712 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:30:51.188  INFO 2712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 23:30:51.499  INFO 2712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 23:30:51.500  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 23:30:51.502  INFO 2712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 23:30:51.577  INFO 2712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 23:30:51.703  INFO 2712 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 2.963 seconds (JVM running for 36736.468)
+2020-09-21 23:30:51.707  INFO 2712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-21 23:30:55.310  INFO 19044 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 19044 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 23:30:55.313  INFO 19044 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-21 23:30:58.740  INFO 19044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-21 23:30:58.769  INFO 19044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 23:30:58.771  INFO 19044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 23:30:58.972  INFO 19044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 23:30:58.973  INFO 19044 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3053 ms
+2020-09-21 23:31:00.226  INFO 19044 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 23:31:00.602  INFO 19044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:31:01.922  INFO 19044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56386 (http) with context path ''
+2020-09-21 23:31:01.924  INFO 19044 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 23:31:01.982  INFO 19044 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 23:31:02.046  INFO 19044 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 23:31:02.379  INFO 19044 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 8.306 seconds (JVM running for 14.076)
+2020-09-21 23:31:03.308  INFO 19044 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
+2020-09-21 23:31:03.312  INFO 19044 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
+2020-09-21 23:31:03.313  INFO 19044 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
+2020-09-21 23:31:03.313  INFO 19044 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
+2020-09-21 23:31:03.347  INFO 19044 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-21 23:31:03.348  INFO 19044 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-21 23:31:03.349  INFO 19044 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-21 23:31:03.349  INFO 19044 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-21 23:31:08.463  INFO 19044 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:32:08.084  INFO 2712 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:32:14.672  INFO 19093 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 19093 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-21 23:32:14.681  INFO 19093 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-21 23:32:14.787  INFO 19093 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-21 23:32:14.788  INFO 19093 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-21 23:32:17.837  INFO 19093 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-21 23:32:17.856  INFO 19093 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-21 23:32:17.856  INFO 19093 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-21 23:32:18.036  INFO 19093 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-21 23:32:18.036  INFO 19093 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3247 ms
+2020-09-21 23:32:19.002  INFO 19093 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-21 23:32:19.159  INFO 19093 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-21 23:32:19.240  INFO 19093 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-21 23:32:19.459  INFO 19093 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-21 23:32:19.461  INFO 19093 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-21 23:32:19.499  INFO 19093 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-21 23:32:19.547  INFO 19093 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-21 23:32:19.823  INFO 19093 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 6.079 seconds (JVM running for 8.366)
+2020-09-21 23:32:48.563  INFO 19093 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-21 23:32:48.565  INFO 19093 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-21 23:32:48.600  INFO 19093 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 34 ms
+2020-09-21 23:32:49.064  INFO 19093 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-21 23:32:49.077  INFO 19093 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-21 23:32:49.126  INFO 19093 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-21 23:32:49.126  INFO 19093 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-21 23:32:57.530  INFO 19093 --- [http-nio-8080-exec-2] c.a.e.r.e.ExcelGenerationController      : createExcel
+2020-09-21 23:33:14.693  INFO 19093 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-21 23:33:14.695  INFO 19093 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-21 23:33:14.695  INFO 19093 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-21 23:33:14.695  INFO 19093 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-21 23:33:14.848  INFO 19093 --- [http-nio-8080-exec-3] c.a.e.r.e.ExcelGenerationController      : createExcel
+2020-09-21 23:33:21.260  INFO 19093 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-21 23:33:21.261  INFO 19093 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-21 23:33:21.262  INFO 19093 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-21 23:33:21.262  INFO 19093 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-21 23:33:21.362  INFO 19093 --- [http-nio-8080-exec-4] c.a.e.r.e.ExcelGenerationController      : createExcel
+2020-09-21 23:34:47.350  INFO 19093 --- [http-nio-8080-exec-9] c.a.e.r.e.ExcelGenerationController      : Total Number of header isn't equals to the size of some rows in data
+2020-09-21 23:35:37.446  INFO 19093 --- [http-nio-8080-exec-10] c.a.e.r.e.ExcelGenerationController      : Total Number of header isn't equals to the size of some rows in data
+2020-09-21 23:41:20.536  INFO 19093 --- [http-nio-8080-exec-2] c.a.e.r.e.ExcelGenerationController      : Empty headers

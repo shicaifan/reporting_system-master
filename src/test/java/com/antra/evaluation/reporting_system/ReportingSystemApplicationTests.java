@@ -1,10 +1,13 @@
 package com.antra.evaluation.reporting_system;
 
-import com.antra.evaluation.reporting_system.pojo.report.ExcelData;
-import com.antra.evaluation.reporting_system.pojo.report.ExcelDataHeader;
-import com.antra.evaluation.reporting_system.pojo.report.ExcelDataSheet;
-import com.antra.evaluation.reporting_system.pojo.report.ExcelDataType;
+import com.antra.evaluation.reporting_system.pojo.api.ExcelRequest;
+import com.antra.evaluation.reporting_system.pojo.api.MultiSheetExcelRequest;
+import com.antra.evaluation.reporting_system.pojo.report.*;
+
+import com.antra.evaluation.reporting_system.service.CreateExcelDataService;
+import com.antra.evaluation.reporting_system.service.CreateMultiExcelDataService;
 import com.antra.evaluation.reporting_system.service.ExcelGenerationService;
+import com.antra.evaluation.reporting_system.service.ExcelService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +18,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -22,8 +26,17 @@ class ReportingSystemApplicationTests {
 
     @Autowired
     ExcelGenerationService reportService;
+    @Autowired
+    CreateExcelDataService createExcelDataService;
+    @Autowired
+    CreateMultiExcelDataService createMultiExcelDataService;
+    @Autowired
+    ExcelService excelService;
 
     ExcelData data = new ExcelData();
+    ExcelRequest request = new ExcelRequest();
+    MultiSheetExcelRequest multiSheetExcelRequest = new MultiSheetExcelRequest();
+
 
     @BeforeEach // We are using JUnit 5, @Before is replaced by @BeforeEach
     public void setUpData() {
@@ -37,13 +50,13 @@ class ReportingSystemApplicationTests {
         var headersS1 = new ArrayList<ExcelDataHeader>();
         ExcelDataHeader header1 = new ExcelDataHeader();
         header1.setName("NameTest");
-        //       header1.setWidth(10000);
+        // header1.setWidth(10000);
         header1.setType(ExcelDataType.STRING);
         headersS1.add(header1);
 
         ExcelDataHeader header2 = new ExcelDataHeader();
         header2.setName("Age");
-        //   header2.setWidth(10000);
+        // header2.setWidth(10000);
         header2.setType(ExcelDataType.NUMBER);
         headersS1.add(header2);
 
@@ -79,4 +92,61 @@ class ReportingSystemApplicationTests {
         }
         assertTrue(file != null);
     }
+
+    @BeforeEach
+    public void setUpRequest() {
+        List<String> headers = new ArrayList<>();
+        List<List<Object>> data = new ArrayList<>();
+        List<Object> subObj1 = Arrays.asList("Shicai_1","25");
+        List<Object> subObj2 = Arrays.asList("Shicai_2","26");
+        headers.add("Name");
+        headers.add("Age");
+
+        data.add(subObj1);
+        data.add(subObj2);
+        request.setHeaders(headers);
+        request.setData(data);
+    }
+
+    @Test
+    public void testCreateExcelData(){
+        ExcelData excelData= null;
+        try{
+            excelData = createExcelDataService.createExcelData(request);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+        assertTrue(excelData!=null);
+    }
+
+   @BeforeEach
+    public void setUpMultiExcelRequest() {
+        List<String> headers = new ArrayList<>();
+        List<List<Object>> data = new ArrayList<>();
+        List<Object> subObj1 = Arrays.asList("Shicai_1","25","A");
+        List<Object> subObj2 = Arrays.asList("Shicai_2","26","B");
+        String splitBy = "Class";
+        headers.add("Name");
+        headers.add("Age");
+        headers.add("Class");
+        data.add(subObj1);
+        data.add(subObj2);
+        multiSheetExcelRequest.setHeaders(headers);
+        multiSheetExcelRequest.setData(data);
+        multiSheetExcelRequest.setSplitBy(splitBy);
+    }
+
+
+    @Test
+    public void createMultiExcelData(){
+        ExcelData excelData= null;
+        try{
+            excelData = createMultiExcelDataService.createMultiExcelData(multiSheetExcelRequest);
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+        assertTrue(excelData!=null);
+    }
+
+
 }
