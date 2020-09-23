@@ -8,9 +8,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
-
-import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -28,7 +25,7 @@ public class CreateMultiExcelDataServiceImpl implements CreateMultiExcelDataServ
     private static final Logger log = LoggerFactory.getLogger(CreateMultiExcelDataServiceImpl.class);
 
     @Override
-    public ExcelData createMultiExcelData(@RequestBody MultiSheetExcelRequest request) throws IOException {
+    public ExcelFile createMultiExcelData(MultiSheetExcelRequest request) {
         List<String> headers = request.getHeaders();
         List<List<Object>> data = request.getData();
         String splitBy = request.getSplitBy();
@@ -86,6 +83,6 @@ public class CreateMultiExcelDataServiceImpl implements CreateMultiExcelDataServ
         excelRepositoryImpl.saveFile(excelFile);
         log.info("Save File into Repository Successfully");
 
-        return excelData;
+        return excelFile;
     }
 }

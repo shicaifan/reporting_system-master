@@ -110,13 +110,9 @@ class ReportingSystemApplicationTests {
 
     @Test
     public void testCreateExcelData(){
-        ExcelData excelData= null;
-        try{
-            excelData = createExcelDataService.createExcelData(request);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        assertTrue(excelData!=null);
+        ExcelFile excelFile= null;
+        excelFile = createExcelDataService.createExcelData(request);
+        assertTrue(excelFile!=null);
     }
 
    @BeforeEach
@@ -139,13 +135,9 @@ class ReportingSystemApplicationTests {
 
     @Test
     public void createMultiExcelData(){
-        ExcelData excelData= null;
-        try{
-            excelData = createMultiExcelDataService.createMultiExcelData(multiSheetExcelRequest);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        assertTrue(excelData!=null);
+        ExcelFile excelFile= null;
+        excelFile = createMultiExcelDataService.createMultiExcelData(multiSheetExcelRequest);
+        assertTrue(excelFile!=null);
     }
 
 
