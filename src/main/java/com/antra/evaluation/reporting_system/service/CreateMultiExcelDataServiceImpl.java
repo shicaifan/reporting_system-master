@@ -18,9 +18,6 @@ public class CreateMultiExcelDataServiceImpl implements CreateMultiExcelDataServ
 
     @Autowired
     ExcelRepository excelRepository;
-    private static int incrementalFileTitle = 1;
-    private static int incrementalFileId = 1;
-
 
     private static final Logger log = LoggerFactory.getLogger(CreateMultiExcelDataServiceImpl.class);
 
