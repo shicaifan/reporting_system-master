@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Hashtable;
 import java.util.List;
 
 @Service
@@ -17,8 +18,6 @@ public class CreateExcelDataServiceImpl implements CreateExcelDataService {
 
     @Autowired
     ExcelRepository excelRepository;
-    private static int incrementalFileTitle = 1;
-    private static int incrementalFileId = 1;
 
     public CreateExcelDataServiceImpl(ExcelRepository excelRepository) {
         this.excelRepository = excelRepository;
@@ -44,8 +43,9 @@ public class CreateExcelDataServiceImpl implements CreateExcelDataService {
         sheet1.setDataRows(data);
         log.info("Create Excel Data Sheet Success");
 
+        int mapSize = excelRepository.getMapSize()+1;
         ExcelData excelData = new ExcelData();
-        excelData.setTitle("File_"+incrementalFileTitle++);
+        excelData.setTitle("File_"+ mapSize);
         excelData.setGeneratedTime(LocalDateTime.now());
 
         List<ExcelDataSheet> excelDataSheets = new ArrayList<>();
@@ -53,9 +53,10 @@ public class CreateExcelDataServiceImpl implements CreateExcelDataService {
         excelData.setSheets(excelDataSheets);
         log.info("Create Excel Data Success");
 
+
         ExcelFile excelFile = new ExcelFile();
         excelFile.setExcelData(excelData);
-        excelFile.setFileId(String.valueOf(incrementalFileId++));
+        excelFile.setFileId(String.valueOf(mapSize));
         excelRepository.saveFile(excelFile);
         log.info("Save File to Repository Success");
 

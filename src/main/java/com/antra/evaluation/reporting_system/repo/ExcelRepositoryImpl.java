@@ -17,6 +17,10 @@ public class ExcelRepositoryImpl implements ExcelRepository {
     }
 
     @Override
+    public Integer getMapSize(){
+        return excelData.size();
+    }
+    @Override
     public ExcelFile saveFile(ExcelFile file) {
         excelData.put(file.getFileId(), file);
         return file;

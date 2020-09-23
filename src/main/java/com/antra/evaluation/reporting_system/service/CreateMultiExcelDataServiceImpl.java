@@ -20,12 +20,13 @@ public class CreateMultiExcelDataServiceImpl implements CreateMultiExcelDataServ
     ExcelRepository excelRepository;
     private static int incrementalFileTitle = 1;
     private static int incrementalFileId = 1;
-    private static int incrementalSheetName = 1;
+
 
     private static final Logger log = LoggerFactory.getLogger(CreateMultiExcelDataServiceImpl.class);
 
     @Override
     public ExcelFile createMultiExcelData(MultiSheetExcelRequest request) {
+        int incrementalSheetName = 1;
         List<String> headers = request.getHeaders();
         List<List<Object>> data = request.getData();
         String splitBy = request.getSplitBy();
@@ -64,20 +65,22 @@ public class CreateMultiExcelDataServiceImpl implements CreateMultiExcelDataServ
         List<ExcelDataSheet> excelDataSheets = new ArrayList<>();
         for(Object obj: map.keySet()){
             ExcelDataSheet excelDataSheet = new ExcelDataSheet();
-            excelDataSheet.setTitle("sheet_"+ incrementalSheetName++);
+            excelDataSheet.setTitle("sheet"+incrementalSheetName++);
             excelDataSheet.setHeaders(excelDataHeaders);
             excelDataSheet.setDataRows(map.get(obj));
             excelDataSheets.add(excelDataSheet);
         }
         log.info("Create Multiple Excel Data Sheets Success");
-        excelData.setTitle("File_"+incrementalFileTitle++);
+
+        int mapSize = excelRepository.getMapSize()+1;
+        excelData.setTitle("File_"+mapSize);
         excelData.setGeneratedTime(LocalDateTime.now());
         excelData.setSheets(excelDataSheets);
         log.info("Create Excel Data Success");
 
         ExcelFile excelFile = new ExcelFile();
         excelFile.setExcelData(excelData);
-        excelFile.setFileId(String.valueOf(incrementalFileId++));
+        excelFile.setFileId(String.valueOf(mapSize));
 
         ExcelRepositoryImpl excelRepositoryImpl = new ExcelRepositoryImpl();
         excelRepositoryImpl.saveFile(excelFile);

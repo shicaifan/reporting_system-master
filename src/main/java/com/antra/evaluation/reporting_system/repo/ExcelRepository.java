@@ -13,4 +13,6 @@ public interface ExcelRepository {
     ExcelFile deleteFile(String id);
 
     List<ExcelFile> getFiles();
+
+    Integer getMapSize();
 }

@@ -1,409 +1,313 @@
-2020-09-22 14:48:47.802  INFO 19790 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 14:48:48.206  INFO 19790 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 19790 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 14:48:48.207  INFO 19790 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 14:48:49.804  INFO 19790 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 14:48:49.809  INFO 19790 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 14:48:49.810  INFO 19790 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 14:48:49.834  INFO 19790 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 14:48:49.835  INFO 19790 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1620 ms
-2020-09-22 14:48:50.304  INFO 19790 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 14:48:50.373  INFO 19790 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 14:48:50.401  INFO 19790 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 14:48:50.581  INFO 19790 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 14:48:50.583  INFO 19790 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 14:48:50.586  INFO 19790 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 14:48:50.633  INFO 19790 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 14:48:50.787  INFO 19790 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 2.826 seconds (JVM running for 2073.822)
-2020-09-22 14:48:50.804  INFO 19790 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-09-22 14:49:10.931  INFO 19790 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 14:49:20.890  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 21121 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 14:49:20.902  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 14:49:21.059  INFO 21121 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-22 14:49:21.059  INFO 21121 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-22 14:49:23.639  INFO 21121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 14:49:23.666  INFO 21121 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 14:49:23.669  INFO 21121 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 14:49:23.796  INFO 21121 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 14:49:23.796  INFO 21121 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2736 ms
-2020-09-22 14:49:24.454  INFO 21121 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 14:49:24.574  INFO 21121 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 14:49:24.648  INFO 21121 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 14:49:24.875  INFO 21121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 14:49:24.879  INFO 21121 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 14:49:24.934  INFO 21121 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 14:49:24.986  INFO 21121 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 14:49:25.232  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 5.418 seconds (JVM running for 8.209)
-2020-09-22 14:49:54.894  INFO 21121 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-09-22 14:49:54.897  INFO 21121 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-09-22 14:49:54.921  INFO 21121 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
-2020-09-22 14:49:55.352  INFO 21121 --- [http-nio-8080-exec-2] c.a.e.r.e.ExcelGenerationController      : Total Number of header isn't equals to the size of some rows in data
-2020-09-22 14:50:34.115  INFO 21121 --- [http-nio-8080-exec-4] c.a.e.r.e.ExcelGenerationController      : Total Number of header isn't equals to the size of some rows in data
-2020-09-22 14:51:22.372  INFO 21121 --- [http-nio-8080-exec-6] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 14:51:22.375  INFO 21121 --- [http-nio-8080-exec-6] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 14:51:22.395  INFO 21121 --- [http-nio-8080-exec-6] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 14:51:22.396  INFO 21121 --- [http-nio-8080-exec-6] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
-2020-09-22 15:07:14.680  INFO 21121 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 15:07:15.090  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 21121 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 15:07:15.092  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 15:07:16.801  INFO 21121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 15:07:16.806  INFO 21121 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 15:07:16.807  INFO 21121 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 15:07:16.868  INFO 21121 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 15:07:16.869  INFO 21121 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1766 ms
-2020-09-22 15:07:17.291  INFO 21121 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 15:07:17.408  INFO 21121 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 15:07:17.422  INFO 21121 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 15:07:17.563  INFO 21121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 15:07:17.566  INFO 21121 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 15:07:17.568  INFO 21121 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 15:07:17.581  INFO 21121 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 15:07:17.657  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 2.806 seconds (JVM running for 380.455)
-2020-09-22 15:07:17.661  INFO 21121 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-09-22 15:21:17.003  INFO 21121 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 15:21:17.328  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 21121 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 15:21:17.329  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 15:21:18.807  INFO 21121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 15:21:18.809  INFO 21121 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 15:21:18.810  INFO 21121 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 15:21:18.863  INFO 21121 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 15:21:18.864  INFO 21121 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1530 ms
-2020-09-22 15:21:19.433  INFO 21121 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 15:21:19.497  INFO 21121 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 15:21:19.515  INFO 21121 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 15:21:19.668  INFO 21121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 15:21:19.670  INFO 21121 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 15:21:19.671  INFO 21121 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 15:21:19.683  INFO 21121 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 15:21:19.851  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 2.586 seconds (JVM running for 1222.608)
-2020-09-22 15:21:19.854  INFO 21121 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-09-22 16:04:55.541  INFO 21121 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 16:04:55.947  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 21121 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 16:04:55.947  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 16:04:58.701  INFO 21121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 16:04:58.704  INFO 21121 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 16:04:58.705  INFO 21121 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 16:04:58.836  INFO 21121 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 16:04:58.836  INFO 21121 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2881 ms
-2020-09-22 16:04:59.686  INFO 21121 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 16:04:59.826  INFO 21121 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 16:04:59.861  INFO 21121 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 16:05:00.059  INFO 21121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 16:05:00.063  INFO 21121 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 16:05:00.065  INFO 21121 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 16:05:00.086  INFO 21121 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 16:05:00.310  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 4.423 seconds (JVM running for 1416.699)
-2020-09-22 16:05:00.315  INFO 21121 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-09-22 17:21:31.269  INFO 21121 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:21:31.913  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 21121 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 17:21:31.914  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 17:21:32.963  INFO 21121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 17:21:32.965  INFO 21121 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 17:21:32.966  INFO 21121 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 17:21:32.995  INFO 21121 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 17:21:32.996  INFO 21121 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1076 ms
-2020-09-22 17:21:33.245  INFO 21121 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 17:21:33.292  INFO 21121 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:21:33.308  INFO 21121 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 17:21:33.474  INFO 21121 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 17:21:33.475  INFO 21121 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 17:21:33.477  INFO 21121 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 17:21:33.499  INFO 21121 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 17:21:33.621  INFO 21121 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 1.821 seconds (JVM running for 3465.551)
-2020-09-22 17:21:33.627  INFO 21121 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-09-22 17:28:59.754  INFO 21121 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:29:21.226  INFO 23154 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 23154 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 17:29:21.239  INFO 23154 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 17:29:21.357  INFO 23154 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-22 17:29:21.359  INFO 23154 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-22 17:29:23.932  INFO 23154 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 17:29:23.952  INFO 23154 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 17:29:23.953  INFO 23154 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 17:29:24.074  INFO 23154 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 17:29:24.074  INFO 23154 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2714 ms
-2020-09-22 17:29:24.717  INFO 23154 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 17:29:24.832  INFO 23154 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:29:24.901  INFO 23154 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 17:29:25.142  INFO 23154 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 17:29:25.144  INFO 23154 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 17:29:25.187  INFO 23154 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 17:29:25.232  INFO 23154 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 17:29:25.451  INFO 23154 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 5.052 seconds (JVM running for 7.928)
-2020-09-22 17:30:23.767  INFO 23154 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:33:29.462  INFO 23340 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 23340 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 17:33:29.468  INFO 23340 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
-2020-09-22 17:33:35.719  INFO 23340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2020-09-22 17:33:35.756  INFO 23340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 17:33:35.757  INFO 23340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 17:33:36.069  INFO 23340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 17:33:36.070  INFO 23340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5782 ms
-2020-09-22 17:33:37.631  INFO 23340 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 17:33:37.944  INFO 23340 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:33:39.145  INFO 23340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63169 (http) with context path ''
-2020-09-22 17:33:39.147  INFO 23340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 17:33:39.349  INFO 23340 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 17:33:39.441  INFO 23340 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 17:33:40.058  INFO 23340 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 12.032 seconds (JVM running for 16.897)
-2020-09-22 17:33:41.451  INFO 23340 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 17:33:41.455  INFO 23340 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 17:33:41.457  INFO 23340 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 17:33:41.457  INFO 23340 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
-2020-09-22 17:33:43.541  INFO 23340 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:46:14.848  INFO 23719 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 23719 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 17:46:14.859  INFO 23719 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
-2020-09-22 17:46:19.680  INFO 23719 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2020-09-22 17:46:19.712  INFO 23719 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 17:46:19.713  INFO 23719 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 17:46:19.920  INFO 23719 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 17:46:19.921  INFO 23719 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3842 ms
-2020-09-22 17:46:21.421  INFO 23719 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 17:46:21.689  INFO 23719 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:46:22.700  INFO 23719 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63576 (http) with context path ''
-2020-09-22 17:46:22.702  INFO 23719 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 17:46:22.769  INFO 23719 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 17:46:22.831  INFO 23719 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 17:46:23.162  INFO 23719 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 10.464 seconds (JVM running for 14.662)
-2020-09-22 17:46:24.061  INFO 23719 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 17:46:24.067  INFO 23719 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 17:46:24.070  INFO 23719 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 17:46:24.070  INFO 23719 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
-2020-09-22 17:46:26.169  INFO 23719 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:46:45.582  INFO 23734 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 23734 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 17:46:45.598  INFO 23734 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
-2020-09-22 17:46:48.731  INFO 23734 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2020-09-22 17:46:48.762  INFO 23734 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 17:46:48.763  INFO 23734 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 17:46:48.951  INFO 23734 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 17:46:48.952  INFO 23734 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2711 ms
-2020-09-22 17:46:50.217  INFO 23734 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 17:46:50.490  INFO 23734 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:46:51.350  INFO 23734 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63588 (http) with context path ''
-2020-09-22 17:46:51.354  INFO 23734 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 17:46:51.407  INFO 23734 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 17:46:51.458  INFO 23734 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 17:46:51.738  INFO 23734 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 8.556 seconds (JVM running for 13.791)
-2020-09-22 17:46:52.560  INFO 23734 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 17:46:52.564  INFO 23734 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 17:46:52.565  INFO 23734 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 17:46:52.565  INFO 23734 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
-2020-09-22 17:46:54.664  INFO 23734 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:52:36.436  INFO 23898 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 23898 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 17:52:36.442  INFO 23898 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
-2020-09-22 17:52:41.186  INFO 23898 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2020-09-22 17:52:41.215  INFO 23898 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 17:52:41.216  INFO 23898 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 17:52:41.423  INFO 23898 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 17:52:41.423  INFO 23898 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4118 ms
-2020-09-22 17:52:43.040  INFO 23898 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 17:52:43.565  INFO 23898 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:52:46.163  INFO 23898 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63806 (http) with context path ''
-2020-09-22 17:52:46.166  INFO 23898 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 17:52:46.379  INFO 23898 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 17:52:46.768  INFO 23898 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 17:52:47.974  INFO 23898 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 13.107 seconds (JVM running for 17.221)
-2020-09-22 17:52:50.177  INFO 23898 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
-2020-09-22 17:52:50.181  INFO 23898 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
-2020-09-22 17:52:50.183  INFO 23898 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
-2020-09-22 17:52:50.183  INFO 23898 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
-2020-09-22 17:52:50.282  INFO 23898 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 17:52:50.384  INFO 23898 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 17:52:50.388  INFO 23898 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 17:52:50.389  INFO 23898 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
-2020-09-22 17:52:56.854  INFO 23898 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:54:25.401  INFO 23956 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 23956 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 17:54:25.408  INFO 23956 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 17:54:25.558  INFO 23956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-22 17:54:25.559  INFO 23956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-22 17:54:29.251  INFO 23956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 17:54:29.275  INFO 23956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 17:54:29.276  INFO 23956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 17:54:29.431  INFO 23956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 17:54:29.431  INFO 23956 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3871 ms
-2020-09-22 17:54:30.129  INFO 23956 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 17:54:30.259  INFO 23956 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 17:54:30.328  INFO 23956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 17:54:30.586  INFO 23956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 17:54:30.595  INFO 23956 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 17:54:30.661  INFO 23956 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 17:54:30.753  INFO 23956 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 17:54:32.073  INFO 23956 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-09-22 17:54:32.078  INFO 23956 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-09-22 17:54:32.109  INFO 23956 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
-2020-09-22 17:54:32.136  INFO 23956 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 8.142 seconds (JVM running for 11.765)
-2020-09-22 17:54:32.497  INFO 23956 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 17:54:32.503  INFO 23956 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 17:54:32.732  INFO 23956 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 17:54:32.732  INFO 23956 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
-2020-09-22 17:56:58.496  INFO 23956 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 18:30:53.682  INFO 25059 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 25059 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 18:30:53.685  INFO 25059 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
-2020-09-22 18:30:57.484  INFO 25059 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2020-09-22 18:30:57.517  INFO 25059 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 18:30:57.518  INFO 25059 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 18:30:57.766  INFO 25059 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 18:30:57.767  INFO 25059 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3485 ms
-2020-09-22 18:30:59.141  INFO 25059 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 18:30:59.396  INFO 25059 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 18:31:00.544  INFO 25059 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 65315 (http) with context path ''
-2020-09-22 18:31:00.545  INFO 25059 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 18:31:00.611  INFO 25059 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 18:31:00.692  INFO 25059 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 18:31:00.998  INFO 25059 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 8.738 seconds (JVM running for 13.908)
-2020-09-22 18:31:02.078  INFO 25059 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
-2020-09-22 18:31:02.082  INFO 25059 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
-2020-09-22 18:31:02.083  INFO 25059 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
-2020-09-22 18:31:02.083  INFO 25059 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
-2020-09-22 18:31:02.128  INFO 25059 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 18:31:02.129  INFO 25059 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 18:31:02.131  INFO 25059 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 18:31:02.131  INFO 25059 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
-2020-09-22 18:31:08.051  INFO 25059 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 18:56:31.540  INFO 25789 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 25789 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 18:56:31.543  INFO 25789 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
-2020-09-22 18:56:35.192  INFO 25789 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2020-09-22 18:56:35.231  INFO 25789 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 18:56:35.232  INFO 25789 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 18:56:35.447  INFO 25789 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 18:56:35.449  INFO 25789 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3199 ms
-2020-09-22 18:56:36.808  INFO 25789 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 18:56:37.086  INFO 25789 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 18:56:38.140  INFO 25789 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49744 (http) with context path ''
-2020-09-22 18:56:38.143  INFO 25789 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 18:56:38.217  INFO 25789 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 18:56:38.276  INFO 25789 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 18:56:38.594  INFO 25789 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 8.359 seconds (JVM running for 12.911)
-2020-09-22 18:56:39.608  INFO 25789 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
-2020-09-22 18:56:39.612  INFO 25789 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
-2020-09-22 18:56:39.613  INFO 25789 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
-2020-09-22 18:56:39.613  INFO 25789 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
-2020-09-22 18:56:39.652  INFO 25789 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 18:56:39.654  INFO 25789 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 18:56:39.656  INFO 25789 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 18:56:39.658  INFO 25789 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
-2020-09-22 18:56:45.839  INFO 25789 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 20:14:21.804  INFO 27822 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 27822 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 20:14:21.810  INFO 27822 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 20:14:21.923  INFO 27822 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-22 20:14:21.924  INFO 27822 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-22 20:14:24.691  INFO 27822 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 20:14:24.711  INFO 27822 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 20:14:24.711  INFO 27822 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 20:14:24.843  INFO 27822 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 20:14:24.843  INFO 27822 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2918 ms
-2020-09-22 20:14:25.580  INFO 27822 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 20:14:25.737  INFO 27822 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 20:14:25.806  INFO 27822 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 20:14:26.036  INFO 27822 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 20:14:26.038  INFO 27822 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 20:14:26.082  INFO 27822 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 20:14:26.135  INFO 27822 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 20:14:26.401  INFO 27822 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 5.809 seconds (JVM running for 9.918)
-2020-09-22 20:15:06.592  INFO 27822 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-09-22 20:15:06.595  INFO 27822 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-09-22 20:15:06.638  INFO 27822 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 41 ms
-2020-09-22 20:15:06.907  WARN 27822 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `java.lang.String` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.String` out of START_ARRAY token
- at [Source: (PushbackInputStream); line: 3, column: 13] (through reference chain: com.antra.evaluation.reporting_system.pojo.api.MultiSheetExcelRequest["splitBy"])]
-2020-09-22 20:16:30.714  INFO 27822 --- [http-nio-8080-exec-4] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
-2020-09-22 20:16:30.739  INFO 27822 --- [http-nio-8080-exec-4] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
-2020-09-22 20:16:30.758  INFO 27822 --- [http-nio-8080-exec-4] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
-2020-09-22 20:16:30.758  INFO 27822 --- [http-nio-8080-exec-4] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
-2020-09-22 20:23:16.376  INFO 27822 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 20:23:21.783  INFO 28085 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 28085 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 20:23:21.790  INFO 28085 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 20:23:21.961  INFO 28085 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-22 20:23:21.962  INFO 28085 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-22 20:23:25.791  INFO 28085 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 20:23:25.809  INFO 28085 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 20:23:25.809  INFO 28085 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 20:23:25.966  INFO 28085 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 20:23:25.967  INFO 28085 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4004 ms
-2020-09-22 20:23:26.791  INFO 28085 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 20:23:26.896  INFO 28085 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 20:23:26.957  INFO 28085 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 20:23:27.168  INFO 28085 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 20:23:27.173  INFO 28085 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 20:23:27.212  INFO 28085 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 20:23:27.254  INFO 28085 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 20:23:27.511  INFO 28085 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 6.941 seconds (JVM running for 9.959)
-2020-09-22 20:30:40.932  INFO 28085 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 20:30:41.420  INFO 28085 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 28085 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 20:30:41.421  INFO 28085 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 20:30:42.982  INFO 28085 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 20:30:42.984  INFO 28085 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 20:30:42.985  INFO 28085 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 20:30:43.028  INFO 28085 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 20:30:43.029  INFO 28085 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1596 ms
-2020-09-22 20:30:43.763  INFO 28085 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 20:30:43.878  INFO 28085 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 20:30:43.903  INFO 28085 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 20:30:44.067  INFO 28085 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 20:30:44.068  INFO 28085 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 20:30:44.069  INFO 28085 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 20:30:44.086  INFO 28085 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 20:30:44.237  INFO 28085 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 3.094 seconds (JVM running for 446.673)
-2020-09-22 20:30:44.242  INFO 28085 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2020-09-22 20:31:08.826  INFO 28332 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 28332 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 20:31:08.835  INFO 28332 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
-2020-09-22 20:31:12.069  INFO 28332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2020-09-22 20:31:12.093  INFO 28332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 20:31:12.094  INFO 28332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 20:31:12.305  INFO 28332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 20:31:12.306  INFO 28332 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2794 ms
-2020-09-22 20:31:13.483  INFO 28332 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 20:31:13.754  INFO 28332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 20:31:14.769  INFO 28332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52376 (http) with context path ''
-2020-09-22 20:31:14.771  INFO 28332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 20:31:14.838  INFO 28332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 20:31:15.004  INFO 28332 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 20:31:15.278  INFO 28332 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 7.723 seconds (JVM running for 10.913)
-2020-09-22 20:31:16.486  INFO 28332 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
-2020-09-22 20:31:16.490  INFO 28332 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
-2020-09-22 20:31:16.491  INFO 28332 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
-2020-09-22 20:31:16.491  INFO 28332 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
-2020-09-22 20:31:16.527  INFO 28332 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 20:31:16.527  INFO 28332 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 20:31:16.528  INFO 28332 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 20:31:16.528  INFO 28332 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
-2020-09-22 20:31:22.543  INFO 28332 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 20:31:37.983  INFO 28085 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-22 20:31:43.358  INFO 28357 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 28357 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
-2020-09-22 20:31:43.395  INFO 28357 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
-2020-09-22 20:31:43.520  INFO 28357 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-22 20:31:43.520  INFO 28357 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-22 20:31:46.014  INFO 28357 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-22 20:31:46.032  INFO 28357 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-22 20:31:46.032  INFO 28357 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-09-22 20:31:46.145  INFO 28357 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-22 20:31:46.146  INFO 28357 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2626 ms
-2020-09-22 20:31:46.820  INFO 28357 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-22 20:31:46.925  INFO 28357 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-22 20:31:47.068  INFO 28357 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-22 20:31:47.309  INFO 28357 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-09-22 20:31:47.311  INFO 28357 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-22 20:31:47.342  INFO 28357 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-22 20:31:47.402  INFO 28357 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-22 20:31:47.774  INFO 28357 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 5.123 seconds (JVM running for 6.909)
-2020-09-22 20:31:59.220  INFO 28357 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-09-22 20:31:59.224  INFO 28357 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-09-22 20:31:59.241  INFO 28357 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2020-09-22 20:31:59.464  INFO 28357 --- [http-nio-8080-exec-1] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
-2020-09-22 20:31:59.467  INFO 28357 --- [http-nio-8080-exec-1] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
-2020-09-22 20:31:59.480  INFO 28357 --- [http-nio-8080-exec-1] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
-2020-09-22 20:31:59.480  INFO 28357 --- [http-nio-8080-exec-1] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
-2020-09-22 20:32:07.680  INFO 28357 --- [http-nio-8080-exec-3] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
-2020-09-22 20:32:07.681  INFO 28357 --- [http-nio-8080-exec-3] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
-2020-09-22 20:32:07.682  INFO 28357 --- [http-nio-8080-exec-3] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
-2020-09-22 20:32:07.682  INFO 28357 --- [http-nio-8080-exec-3] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
-2020-09-22 20:32:14.520  INFO 28357 --- [http-nio-8080-exec-4] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
-2020-09-22 20:32:14.522  INFO 28357 --- [http-nio-8080-exec-4] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
-2020-09-22 20:32:14.522  INFO 28357 --- [http-nio-8080-exec-4] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
-2020-09-22 20:32:14.523  INFO 28357 --- [http-nio-8080-exec-4] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
-2020-09-22 20:32:19.044  WARN 28357 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2020-09-22 20:32:40.364  WARN 28357 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
-2020-09-22 20:33:23.294  INFO 28357 --- [http-nio-8080-exec-10] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 20:33:23.320  INFO 28357 --- [http-nio-8080-exec-10] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 20:33:23.334  INFO 28357 --- [http-nio-8080-exec-10] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 20:33:23.335  INFO 28357 --- [http-nio-8080-exec-10] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
-2020-09-22 20:33:28.575  INFO 28357 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
-2020-09-22 20:33:28.575  INFO 28357 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
-2020-09-22 20:33:28.576  INFO 28357 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
-2020-09-22 20:33:28.576  INFO 28357 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 11:52:22.364  INFO 28357 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 11:52:37.434  INFO 34394 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 34394 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-23 11:52:37.443  INFO 34394 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-23 11:52:37.568  INFO 34394 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 11:52:37.569  INFO 34394 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-23 11:52:40.879  INFO 34394 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-23 11:52:40.909  INFO 34394 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-23 11:52:40.910  INFO 34394 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-23 11:52:41.149  INFO 34394 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-23 11:52:41.150  INFO 34394 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3581 ms
+2020-09-23 11:52:41.911  INFO 34394 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-23 11:52:42.042  INFO 34394 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 11:52:42.121  INFO 34394 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 11:52:42.354  INFO 34394 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-23 11:52:42.356  INFO 34394 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-23 11:52:42.408  INFO 34394 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-23 11:52:42.459  INFO 34394 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-23 11:52:42.738  INFO 34394 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 6.577 seconds (JVM running for 9.041)
+2020-09-23 11:53:25.846  INFO 34394 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-23 11:53:25.852  INFO 34394 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-23 11:53:25.883  INFO 34394 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2020-09-23 11:53:26.362  INFO 34394 --- [http-nio-8080-exec-1] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-23 11:53:26.364  INFO 34394 --- [http-nio-8080-exec-1] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-23 11:53:26.390  INFO 34394 --- [http-nio-8080-exec-1] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-23 11:53:26.391  INFO 34394 --- [http-nio-8080-exec-1] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 11:53:42.762  INFO 34394 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-23 11:53:42.766  INFO 34394 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-23 11:53:42.767  INFO 34394 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-23 11:53:42.767  INFO 34394 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 11:53:52.261  INFO 34394 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-23 11:53:52.262  INFO 34394 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-23 11:53:52.263  INFO 34394 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-23 11:53:52.263  INFO 34394 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 11:59:16.592  INFO 34394 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 11:59:28.526  INFO 34663 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 34663 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-23 11:59:28.532  INFO 34663 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-23 11:59:28.721  INFO 34663 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 11:59:28.722  INFO 34663 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-23 11:59:32.145  INFO 34663 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-23 11:59:32.172  INFO 34663 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-23 11:59:32.172  INFO 34663 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-23 11:59:32.311  INFO 34663 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-23 11:59:32.312  INFO 34663 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3590 ms
+2020-09-23 11:59:33.215  INFO 34663 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-23 11:59:33.388  INFO 34663 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 11:59:33.492  INFO 34663 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 11:59:33.769  INFO 34663 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-23 11:59:33.773  INFO 34663 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-23 11:59:33.834  INFO 34663 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-23 11:59:33.890  INFO 34663 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-23 11:59:34.437  INFO 34663 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 6.914 seconds (JVM running for 9.309)
+2020-09-23 12:00:01.237  INFO 34663 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-23 12:00:01.240  INFO 34663 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-23 12:00:01.272  INFO 34663 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2020-09-23 12:00:01.585  INFO 34663 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-23 12:00:01.587  INFO 34663 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-23 12:00:01.607  INFO 34663 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-23 12:00:01.609  INFO 34663 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 12:00:14.838  INFO 34663 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-23 12:00:14.838  INFO 34663 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-23 12:00:14.838  INFO 34663 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-23 12:00:14.838  INFO 34663 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 12:00:22.810  INFO 34663 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-23 12:00:22.811  INFO 34663 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-23 12:00:22.811  INFO 34663 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-23 12:00:22.811  INFO 34663 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 12:05:48.561  INFO 34663 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 12:05:57.406  INFO 34910 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 34910 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-23 12:05:57.413  INFO 34910 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-23 12:05:57.548  INFO 34910 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 12:05:57.548  INFO 34910 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-23 12:06:00.103  INFO 34910 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-23 12:06:00.120  INFO 34910 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-23 12:06:00.121  INFO 34910 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-23 12:06:00.232  INFO 34910 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-23 12:06:00.232  INFO 34910 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2683 ms
+2020-09-23 12:06:00.777  INFO 34910 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-23 12:06:00.894  INFO 34910 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 12:06:00.954  INFO 34910 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 12:06:01.177  INFO 34910 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-23 12:06:01.180  INFO 34910 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-23 12:06:01.222  INFO 34910 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-23 12:06:01.267  INFO 34910 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-23 12:06:01.499  INFO 34910 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 5.0 seconds (JVM running for 6.966)
+2020-09-23 12:06:28.468  INFO 34910 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-23 12:06:28.471  INFO 34910 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-23 12:06:28.499  INFO 34910 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+2020-09-23 12:06:28.770  INFO 34910 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-23 12:06:28.771  INFO 34910 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-23 12:06:28.788  INFO 34910 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-23 12:06:28.788  INFO 34910 --- [http-nio-8080-exec-2] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 12:06:36.800  INFO 34910 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-23 12:06:36.804  INFO 34910 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-23 12:06:36.804  INFO 34910 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-23 12:06:36.804  INFO 34910 --- [http-nio-8080-exec-3] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 12:06:42.280  INFO 34910 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-23 12:06:42.281  INFO 34910 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-23 12:06:42.281  INFO 34910 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-23 12:06:42.281  INFO 34910 --- [http-nio-8080-exec-4] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 12:08:49.562  INFO 34910 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 12:09:03.693  INFO 36715 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 36715 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-23 12:09:03.698  INFO 36715 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-23 12:09:03.829  INFO 36715 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 12:09:03.831  INFO 36715 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-23 12:09:07.357  INFO 36715 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-23 12:09:07.377  INFO 36715 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-23 12:09:07.378  INFO 36715 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-23 12:09:07.574  INFO 36715 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-23 12:09:07.575  INFO 36715 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3742 ms
+2020-09-23 12:09:08.539  INFO 36715 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-23 12:09:08.835  INFO 36715 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 12:09:08.909  INFO 36715 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 12:09:09.169  INFO 36715 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-23 12:09:09.173  INFO 36715 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-23 12:09:09.219  INFO 36715 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-23 12:09:09.277  INFO 36715 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-23 12:09:09.556  INFO 36715 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 6.941 seconds (JVM running for 11.42)
+2020-09-23 12:09:16.249  INFO 36715 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-23 12:09:16.253  INFO 36715 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-23 12:09:16.275  INFO 36715 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-09-23 12:09:16.492  INFO 36715 --- [http-nio-8080-exec-2] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
+2020-09-23 12:09:16.495  INFO 36715 --- [http-nio-8080-exec-2] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
+2020-09-23 12:09:16.575  INFO 36715 --- [http-nio-8080-exec-2] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
+2020-09-23 12:09:16.576  INFO 36715 --- [http-nio-8080-exec-2] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
+2020-09-23 12:09:19.255 ERROR 36715 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: The workbook already contains a sheet named 'sheet'] with root cause
+
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'sheet'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:906) ~[poi-ooxml-4.1.0.jar:4.1.0]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:859) ~[poi-ooxml-4.1.0.jar:4.1.0]
+	at com.antra.evaluation.reporting_system.service.ExcelGenerationServiceImpl.generateExcelReport(ExcelGenerationServiceImpl.java:69) ~[classes/:na]
+	at com.antra.evaluation.reporting_system.endpoint.ExcelGenerationController.createMultiSheetExcel(ExcelGenerationController.java:74) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-09-23 12:10:15.975  INFO 36715 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 12:10:24.479  INFO 36761 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 36761 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-23 12:10:24.486  INFO 36761 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-23 12:10:24.587  INFO 36761 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 12:10:24.588  INFO 36761 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-23 12:10:27.046  INFO 36761 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-23 12:10:27.065  INFO 36761 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-23 12:10:27.065  INFO 36761 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-23 12:10:27.196  INFO 36761 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-23 12:10:27.197  INFO 36761 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2609 ms
+2020-09-23 12:10:27.791  INFO 36761 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-23 12:10:27.915  INFO 36761 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 12:10:27.973  INFO 36761 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 12:10:28.190  INFO 36761 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-23 12:10:28.193  INFO 36761 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-23 12:10:28.236  INFO 36761 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-23 12:10:28.285  INFO 36761 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-23 12:10:28.496  INFO 36761 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 4.802 seconds (JVM running for 6.438)
+2020-09-23 12:12:54.572  INFO 36761 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-23 12:12:54.582  INFO 36761 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-23 12:12:54.614  INFO 36761 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2020-09-23 12:12:54.966  INFO 36761 --- [http-nio-8080-exec-2] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
+2020-09-23 12:12:54.976  INFO 36761 --- [http-nio-8080-exec-2] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
+2020-09-23 12:12:54.995  INFO 36761 --- [http-nio-8080-exec-2] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
+2020-09-23 12:12:54.996  INFO 36761 --- [http-nio-8080-exec-2] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
+2020-09-23 12:12:58.310 ERROR 36761 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: The workbook already contains a sheet named 'sheet1'] with root cause
+
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'sheet1'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:906) ~[poi-ooxml-4.1.0.jar:4.1.0]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:859) ~[poi-ooxml-4.1.0.jar:4.1.0]
+	at com.antra.evaluation.reporting_system.service.ExcelGenerationServiceImpl.generateExcelReport(ExcelGenerationServiceImpl.java:69) ~[classes/:na]
+	at com.antra.evaluation.reporting_system.endpoint.ExcelGenerationController.createMultiSheetExcel(ExcelGenerationController.java:74) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-09-23 12:17:22.684  INFO 36761 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-23 12:17:33.031  INFO 36958 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Starting ReportingSystemApplication on Shicais-MacBook-Air.local with PID 36958 (/Users/shicaifan/Desktop/reporting_system-master/target/classes started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-23 12:17:33.035  INFO 36958 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : No active profile set, falling back to default profiles: default
+2020-09-23 12:17:33.202  INFO 36958 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-23 12:17:33.202  INFO 36958 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-23 12:17:35.421  INFO 36958 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-23 12:17:35.440  INFO 36958 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-23 12:17:35.441  INFO 36958 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-23 12:17:35.609  INFO 36958 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-23 12:17:35.610  INFO 36958 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2407 ms
+2020-09-23 12:17:36.250  INFO 36958 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-23 12:17:36.403  INFO 36958 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 12:17:36.481  INFO 36958 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-23 12:17:36.721  INFO 36958 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-23 12:17:36.724  INFO 36958 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-23 12:17:36.778  INFO 36958 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-23 12:17:36.866  INFO 36958 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-23 12:17:37.093  INFO 36958 --- [restartedMain] c.a.e.r.ReportingSystemApplication       : Started ReportingSystemApplication in 5.583 seconds (JVM running for 7.83)
+2020-09-23 12:18:04.159  INFO 36958 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-23 12:18:04.161  INFO 36958 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-23 12:18:04.186  INFO 36958 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2020-09-23 12:18:04.612  INFO 36958 --- [http-nio-8080-exec-1] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
+2020-09-23 12:18:04.625  INFO 36958 --- [http-nio-8080-exec-1] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
+2020-09-23 12:18:04.644  INFO 36958 --- [http-nio-8080-exec-1] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
+2020-09-23 12:18:04.644  INFO 36958 --- [http-nio-8080-exec-1] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
+2020-09-23 12:19:10.291  INFO 37018 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Starting ReportingSystemApplicationTests on Shicais-MacBook-Air.local with PID 37018 (started by shicaifan in /Users/shicaifan/Desktop/reporting_system-master)
+2020-09-23 12:19:10.307  INFO 37018 --- [main] c.a.e.r.ReportingSystemApplicationTests  : No active profile set, falling back to default profiles: default
+2020-09-23 12:19:14.046  INFO 37018 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-09-23 12:19:14.077  INFO 37018 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-23 12:19:14.078  INFO 37018 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-23 12:19:14.324  INFO 37018 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-23 12:19:14.325  INFO 37018 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3433 ms
+2020-09-23 12:19:15.945  INFO 37018 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-23 12:19:16.253  INFO 37018 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-23 12:19:17.459  INFO 37018 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63068 (http) with context path ''
+2020-09-23 12:19:17.461  INFO 37018 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-23 12:19:17.545  INFO 37018 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-23 12:19:17.620  INFO 37018 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-23 12:19:17.956  INFO 37018 --- [main] c.a.e.r.ReportingSystemApplicationTests  : Started ReportingSystemApplicationTests in 8.964 seconds (JVM running for 14.88)
+2020-09-23 12:19:18.818  INFO 37018 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Header Success
+2020-09-23 12:19:18.828  INFO 37018 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Multiple Excel Data Sheets Success
+2020-09-23 12:19:18.832  INFO 37018 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Create Excel Data Success
+2020-09-23 12:19:18.833  INFO 37018 --- [main] .a.e.r.s.CreateMultiExcelDataServiceImpl : Save File into Repository Successfully
+2020-09-23 12:19:18.909  INFO 37018 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Headers Success
+2020-09-23 12:19:18.912  INFO 37018 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Sheet Success
+2020-09-23 12:19:18.913  INFO 37018 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Create Excel Data Success
+2020-09-23 12:19:18.913  INFO 37018 --- [main] c.a.e.r.s.CreateExcelDataServiceImpl     : Save File to Repository Success
+2020-09-23 12:19:24.252  INFO 37018 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
